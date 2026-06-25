@@ -1,41 +1,252 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>NEON VOID</title>
-<link rel="stylesheet" href="css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BRAVUS</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
 <header>
-<div class="logo">NEON VOID</div>
-<p class="slogan">O Futuro da Moda Y2K</p>
+
+<div class="logo">
+BRAVUS
+</div>
 
 <nav>
-<a href="index.html">Home</a>
+
+<a href="index.html">Início</a>
+
 <a href="sobre.html">Sobre</a>
+
 <a href="produtos.html">Produtos</a>
+
 <a href="cadastro.html">Cadastro</a>
+
 <a href="contato.html">Contato</a>
+
 </nav>
+
+<div class="icons">
+
+<a href="cadastro.html">
+👤
+</a>
+
+<a href="produtos.html">
+🛒
+<span id="cart-count">0</span>
+</a>
+
+</div>
+
 </header>
 
 <section class="hero">
-<h1>Y2K IS BACK</h1>
+
+<video autoplay muted loop>
+
+<source src="video.mp4" type="video/mp4">
+
+</video>
+
+<div class="hero-content">
+
+<h1>
+O EXTRAORDINÁRIO
+</h1>
+
+<h2>
+Streetwear Y2K
+</h2>
+
+<p>
+Moda futurista para quem não passa despercebido.
+</p>
+
+<a href="produtos.html" class="btn">
+Comprar Agora
+</a>
+
+</div>
+
 </section>
 
-<main class="container">
-<h2>Bem-vindo à NEON VOID</h2>
-<br>
+<section class="banner">
+
+<div class="banner-item">
+20+ Produtos
+</div>
+
+<div class="banner-item">
+Entrega para todo Brasil
+</div>
+
+<div class="banner-item">
+Coleção Y2K
+</div>
+
+</section>
+
+<section class="destaques">
+
+<h2>
+Produtos em Destaque
+</h2>
+
+<div class="produtos-grid">
+
+<div class="produto">
+<img src="https://picsum.photos/300/400?1">
+
+<h3>Cyber Vision Tee</h3>
+
+<p>R$ 89,90</p>
+
+<button onclick="addToCart(1)">
+Adicionar
+</button>
+</div>
+
+<div class="produto">
+<img src="https://picsum.photos/300/400?2">
+
+<h3>Glitch Hoodie</h3>
+
+<p>R$ 249,90</p>
+
+<button onclick="addToCart(13)">
+Adicionar
+</button>
+</div>
+
+<div class="produto">
+<img src="https://picsum.photos/300/400?3">
+
+<h3>Cargo Y2K Black</h3>
+
+<p>R$ 189,90</p>
+
+<button onclick="addToCart(6)">
+Adicionar
+</button>
+</div>
+
+<div class="produto">
+<img src="https://picsum.photos/300/400?4">
+
+<h3>Boné BRAVUS</h3>
+
+<p>R$ 79,90</p>
+
+<button onclick="addToCart(19)">
+Adicionar
+</button>
+</div>
+
+</div>
+
+</section>
+
+<section class="sobre-home">
+
+<div class="texto">
+
+<h2>
+Sobre a BRAVUS
+</h2>
+
 <p>
-A NEON VOID traz o melhor da moda Y2K com peças inspiradas nos anos 2000,
-misturando tecnologia, streetwear e estilo futurista.
+
+A BRAVUS nasceu da fusão entre a estética Y2K, o streetwear contemporâneo e a cultura digital.
+
+Criamos peças para pessoas que desejam se destacar através da moda.
+
 </p>
-</main>
+
+<a href="sobre.html" class="btn">
+Conheça Mais
+</a>
+
+</div>
+
+</section>
+
+<section class="newsletter">
+
+<h2>
+Receba Novidades
+</h2>
+
+<form>
+
+<input type="email" placeholder="Seu e-mail">
+
+<button type="submit">
+Cadastrar
+</button>
+
+</form>
+
+</section>
 
 <footer>
-<p>© 2026 NEON VOID</p>
+
+<div>
+
+<h3>
+BRAVUS
+</h3>
+
+<p>
+Own The Future.
+</p>
+
+</div>
+
+<div>
+
+<h3>
+Links
+</h3>
+
+<a href="index.html">Início</a>
+<a href="sobre.html">Sobre</a>
+<a href="produtos.html">Produtos</a>
+
+</div>
+<div class="filtros">
+
+<button>Todos</button>
+<button>Hoodies</button>
+<button>Cargos</button>
+<button>Camisetas</button>
+<button>Acessórios</button>
+
+</div>
+
+<div>
+
+<h3>
+Contato
+</h3>
+
+<p>contato@bravus.com</p>
+
+<p>(11) 99999-9999</p>
+
+</div>
+
 </footer>
+
+<script src="carrinho.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
