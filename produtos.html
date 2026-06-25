@@ -1,72 +1,87 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Produtos</title>
-<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
 </head>
 <body>
+    <div class="produtos-grid">
 
-<header>
-<div class="logo">NEON VOID</div>
-
-<nav>
-<a href="index.html">Home</a>
-<a href="sobre.html">Sobre</a>
-<a href="produtos.html">Produtos</a>
-<a href="cadastro.html">Cadastro</a>
-<a href="contato.html">Contato</a>
-</nav>
-</header>
-
-<main class="container">
-
-<h1>Nossos Produtos</h1>
-
-<br>
-
-<div class="cards">
-
-<div class="card">
-<img src="images/imagem3.jpg">
-<div class="card-content">
-<h3>Jaqueta Cyber</h3>
-<p class="preco">R$ 249,90</p>
-</div>
+<div class="produto">
+<img src="imagens/BRAVUS.png">
+<h3>Hoodie BRAVUS</h3>
+<p>R$ 259,90</p>
+<button onclick="addToCart(3)">Adicionar</button>
 </div>
 
-<div class="card">
-<img src="images/imagem2.jpg">
-<div class="card-content">
-<h3>Calça Techwear</h3>
-<p class="preco">R$ 199,90</p>
-</div>
-</div>
-
-<div class="card">
-<img src="images/imagem1.jpg">
-<div class="card-content">
-<h3>Camiseta Y2K</h3>
-<p class="preco">R$ 89,90</p>
-</div>
+<div class="produto">
+<img src="imagens/cargo-black.jpg">
+<h3>Cargo Blossom Black</h3>
+<p>R$ 219,90</p>
+<button onclick="addToCart(2)">Adicionar</button>
 </div>
 
+<div class="produto">
+<img src="imagens/hoodie-black.png">
+<h3>BRAVUS Mask Hoodie</h3>
+<p>R$ 249,90</p>
+<button onclick="addToCart(1)">Adicionar</button>
 </div>
 
-<br><br>
+<div class="produto">
+<img src="imagens/Cyber-Shadow-Pants.jpg">
+<h3>Cyber Shadow Pants</h3>
+<p>R$ 199,90</p>
+<button onclick="addToCart(4)">Adicionar</button>
+</div>
 
-<h2>Vídeo Institucional</h2>
+<div class="produto">
+<img src="imagens/Void-Hoodie.jpg">
+<h3>Void Hoodie</h3>
+<p>R$ 239,90</p>
+<button onclick="addToCart(5)">Adicionar</button>
+</div>
 
-<iframe
-src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-allowfullscreen>
-</iframe>
+<div class="produto">
+<img src="imagens/Neo-Cargo.jpg">
+<h3>Neo Cargo</h3>
+<p>R$ 209,90</p>
+<button onclick="addToCart(6)">Adicionar</button>
+</div>
 
-</main>
+<div class="produto">
+<img src="imagens/Dark-Future-Zip.jpg">
+<h3>Dark Future Zip</h3>
+<p>R$ 279,90</p>
+<button onclick="addToCart(7)">Adicionar</button>
+</div>
 
-<footer>
-<p>© 2026 NEON VOID</p>
-</footer>
+<div class="produto">
+<img src="imagens/cargo-black.jpg">
+<h3>Glitch Denim</h3>
+<p>R$ 229,90</p>
+<button onclick="addToCart(8)">Adicionar</button>
+</div>
 
+<div class="produto">
+<img src="imagens/Chrome-Oversized.png">
+<h3>Chrome Oversized</h3>
+<p>R$ 189,90</p>
+<button onclick="addToCart(9)">Adicionar</button>
+</div>
+
+<div class="produto">
+<img src="imagens/Cargodrip.png">
+<h3>Riot Cargo V2</h3>
+<p>R$ 239,90</p>
+<button onclick="addToCart(10)">Adicionar</button>
+</div>
+
+</div>
 </body>
 </html>
